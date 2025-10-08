@@ -54,12 +54,12 @@
   <!-- <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview"> --> 
 
   <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
+  <!-- <meta name="citation_title" content="PAPER_TITLE">
   <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
   <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
   <meta name="citation_publication_date" content="2024">
   <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
+  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf"> -->
   
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
@@ -116,12 +116,12 @@
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "MAMBO: High-Resolution Generative Approach for Mammography Images",
+    "description": "MAMBO: A novel patch-based diffusion AI that generates ultra-high-resolution (3840x3840) mammograms.",
     "author": [
       {
         "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
+        "name": "Milica Škipina",
         "affiliation": {
           "@type": "Organization",
           "name": "INSTITUTION_NAME"
@@ -129,7 +129,55 @@
       },
       {
         "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
+        "name": "Nikola Jovišić",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      },
+            {
+        "@type": "Person",
+        "name": "Nicola Dall'Asen",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      },
+            {
+        "@type": "Person",
+        "name": "Vanja Švenda",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      },
+            {
+        "@type": "Person",
+        "name": "Anil Osman Tur",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      },
+            {
+        "@type": "Person",
+        "name": "Slobodan Ilić",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      },
+            {
+        "@type": "Person",
+        "name": "Elisa Ricci",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      },
+            {
+        "@type": "Person",
+        "name": "Dubravko Ćulibrk",
         "affiliation": {
           "@type": "Organization",
           "name": "INSTITUTION_NAME"
@@ -141,25 +189,32 @@
       "@type": "Organization",
       "name": "CONFERENCE_OR_JOURNAL_NAME"
     },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
+    "url": "https://milica-skipina.github.io/MAMBO/",
+    "image": "https://github.com/milica-skipina/MAMBO/blob/master/static/graphical_abstract.png",
+    "keywords": ["Mammography", "Diffusion models", "High resolution", "Generative AI"],
+    "abstract": "Although mammography remains the gold standard in breast cancer screening, its potential can be significantly expanded with Artificial Intelligence (AI)-based tools that aid radiologists in identifying abnormalities. However, training AI systems requires large and diverse datasets, which are often difficult to obtain due to privacy and ethical constraints. To address this issue, the paper introduces MAMmography ensemBle mOdel (MAMBO), a novel patch-based diffusion approach designed to generate full-resolution mammograms. Diffusion models have shown breakthrough results in realistic image generation, yet few studies have focused on mammograms, and none have successfully generated high-resolution outputs required to capture fine-grained features of small lesions. 
+To achieve this, MAMBO integrates separate diffusion models to capture both local and global (image-level) contexts. The contextual information is then fed into the final model, significantly aiding the noise removal process. This design enables MAMBO to generate highly realistic mammograms of up to 3840×3840 pixels. Importantly, this approach can be used to enhance the training of classification models and extended to anomaly segmentation. Experiments, both numerical and radiologist validation, assess MAMBO's capabilities in image generation, super-resolution, and anomaly segmentation, highlighting its potential to enhance mammography analysis for more accurate diagnoses and earlier lesion detection.",
+    "citation": "@article{vskipina2025mambo,
+  title={MAMBO: High-Resolution Generative Approach for Mammography Images},
+  author={{\v{S}}kipina, Milica and Jovi{\v{s}}i{\'c}, Nikola and Dall'Asen, Nicola and {\v{S}}venda, Vanja and Tur, Anil Osman and Ili{\'c}, Slobodan and Ricci, Elisa and {\'C}ulibrk, Dubravko},
+  journal={arXiv preprint arXiv:2506.08677},
+  year={2025}
+}
+",
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
       "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+      "@id": "https://milica-skipina.github.io/MAMBO/"
     },
     "about": [
       {
         "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
+        "name": "Mammography"
       },
       {
         "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
+        "name": "Diffusion models"
       }
     ]
   }
@@ -371,13 +426,13 @@
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Mammography is the gold standard for the detection and diagnosis of breast cancer. This procedure can be significantly enhanced with Artificial Intelligence (AI)-based software, which assists radiologists in identifying abnormalities. However, training AI systems requires large and diverse datasets, which are often difficult to obtain due to privacy and ethical constraints. To address this issue, the paper introduces <b>MAM</b>mography ensem<b>B</b>le m<b>O</b>del (<b>MAMBO</b>), a novel patch-based diffusion approach designed to generate full-resolution mammograms. Diffusion models have shown breakthrough results in realistic image generation, yet few studies have focused on mammograms, and none have successfully generated high-resolution outputs required to capture fine-grained features of small lesions. 
-To achieve this, MAMBO integrates separate diffusion models to capture both local and global (image-level) contexts. The contextual information is then fed into the final model, significantly aiding the noise removal process. This design enables MAMBO to generate highly realistic mammograms of up to 3840×3840 pixels. Importantly, this approach can be used to enhance the training of classification models and extended to anomaly segmentation. Experiments, both numerical and radiologist validation, assess MAMBO's capabilities in image generation, super-resolution, and anomaly segmentation, highlighting its potential to enhance mammography analysis for more accurate diagnoses and earlier lesion detection. 
+            Although mammography remains the gold standard in breast cancer screening, its potential can be significantly expanded with Artificial Intelligence (AI)-based tools that aid radiologists in identifying abnormalities. However, training AI systems requires large and diverse datasets, which are often difficult to obtain due to privacy and ethical constraints. To address this issue, the paper introduces <b>MAM</b>>mography ensem<b>B</b>>le m<b>O</b>del (<b>MAMBO</b>>), a novel patch-based diffusion approach designed to generate full-resolution mammograms. Diffusion models have shown breakthrough results in realistic image generation, yet few studies have focused on mammograms, and none have successfully generated high-resolution outputs required to capture fine-grained features of small lesions. 
+To achieve this, MAMBO integrates separate diffusion models to capture both local and global (image-level) contexts. The contextual information is then fed into the final model, significantly aiding the noise removal process. This design enables MAMBO to generate highly realistic mammograms of up to 3840×3840 pixels. Importantly, this approach can be used to enhance the training of classification models and extended to anomaly segmentation. Experiments, both numerical and radiologist validation, assess MAMBO's capabilities in image generation, super-resolution, and anomaly segmentation, highlighting its potential to enhance mammography analysis for more accurate diagnoses and earlier lesion detection.
           </p>
         </div>
       </div>
